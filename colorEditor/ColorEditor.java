@@ -16,7 +16,7 @@ public ColorEditor(String str)  {// 색상 변경
     Mat out_img = new Mat();
 
     HashMap <String,Color_Range> color_Map = new HashMap<>();
-    // hue(색상): 0~180, saturation(채도), value(밝기):0~255
+    // hue(색상): 0~180, saturation(채도), value():0~255
     // 초록색 계열 hue: 30~83
     color_Map.put("Red",new Color_Range(170, 10)); // 빨간색: 170~10
     color_Map.put("Orange",new Color_Range(10, 20));// 주황색: 10~20
@@ -28,7 +28,7 @@ public ColorEditor(String str)  {// 색상 변경
     color_Map.put("Pink",new Color_Range(150, 170));// 핑크색: 150 170
 
     //색상: color_Map.mid를 중앙값으로 놓고 스크롤로 조절
-    //밝기: 0을 부터 최대값 255
+    //명도: 0을 부터 최대값 255
     //채도: 0부터 255 
     try{
             // raw_img = Imgcodecs.imread("hsl-cover-2.png");

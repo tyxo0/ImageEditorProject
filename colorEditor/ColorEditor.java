@@ -16,7 +16,7 @@ public ColorEditor(String str)  {// 색상 변경
     Mat out_img = new Mat();
 
     HashMap <String,Color_Range> color_Map = new HashMap<>();
-    // hue(색상): 0~180, saturation(채도), value():0~255
+    // hue(색상): 0~180, saturation(채도), value(명도):0~255
     // 초록색 계열 hue: 30~83
     color_Map.put("Red",new Color_Range(170, 10)); // 빨간색: 170~10
     color_Map.put("Orange",new Color_Range(10, 20));// 주황색: 10~20

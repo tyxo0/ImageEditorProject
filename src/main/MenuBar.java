@@ -146,10 +146,8 @@ public class MenuBar extends JMenuBar implements ActionListener {
             fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY); // 파일 선택 모드(단일 파일만 선택가능)
 
             // filter 확장자 추가
-            FileNameExtensionFilter jpgFilter = new FileNameExtensionFilter(".jpg", "jpg");
-            FileNameExtensionFilter pngFilter = new FileNameExtensionFilter(".png", "png");
-            fileChooser.setFileFilter(jpgFilter);
-            fileChooser.setFileFilter(pngFilter);
+            FileNameExtensionFilter imgFilter = new FileNameExtensionFilter("jpg, png", "jpg", "png");
+            fileChooser.setFileFilter(imgFilter);
 
             //열기용 창 만들기
             int returnVal = fileChooser.showOpenDialog(null);
